@@ -1,0 +1,45 @@
+.header {
+    padding: 16px;
+}
+
+.leftItems {
+    float: left;
+}
+
+.logo {
+    margin: 0;
+    width: 140px;
+}
+
+.rightItems {
+    float: right;
+}
+
+.routingLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.route {
+    float: right;
+    margin: 0;
+    margin-top: 6px;
+}
+
+.link {
+    margin: 10px;
+    padding: 4px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #575757;
+}
+
+.link:hover {
+    color: #0BCBC0;
+}
+
+.activeLink {
+    color: #0BCBC0;
+    border-bottom: 2px solid #0BCBC0;
+}
