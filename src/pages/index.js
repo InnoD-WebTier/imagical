@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Title from '../components/Title'
 
 const IndexPage = () => (
   <div>

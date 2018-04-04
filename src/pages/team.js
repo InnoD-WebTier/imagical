@@ -1,11 +1,11 @@
 import React from 'react';
-import Title from '../components/Title';
+import '../styles/index.css';
 
 export default class Team extends React.Component {
     render() {
         return (
             <div>
-                <Title title="MEET THE TEAM" />
+                <h1 className="title">MEET THE TEAM</h1>
             </div>
         );
     }

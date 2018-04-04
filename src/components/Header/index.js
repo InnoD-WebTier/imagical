@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from './imagi_logo.png'
-import './index.css'
+import logo from '../../images/imagi_logo.png'
 
 const Header = () => (
     <div className="header">
