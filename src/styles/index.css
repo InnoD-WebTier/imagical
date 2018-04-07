@@ -17,6 +17,16 @@
     &:after { left: 1.5%; }
 }
 
+.subtitle {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: #575757;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
 .header {
     padding: 16px;
 }
@@ -62,3 +72,70 @@
     color: #0BCBC0;
     border-bottom: 2px solid #0BCBC0;
 }
+
+.team__member-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.member {
+    margin: 2vw;
+    width: 20vw;
+    height: auto;
+    position: relative;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    min-width: 240px;
+    overflow: hidden;
+}
+
+.member:before {
+    content: '';
+    float: left;
+    padding-top: 100%;
+}
+
+.member:hover .member__overlay {
+    bottom: 0;
+}
+
+.member__overlay {
+    position: absolute;
+    bottom: -100%;
+    transition: bottom 0.5s ease;
+    z-index: 1;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    background-color: rgba(11,203,192,0.8);
+}
+
+.member__overlay-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.member__overlay-text > h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .member__overlay {
+        bottom: 0;
+    }
+}
+
+
+
+
