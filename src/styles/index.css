@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+#___gatsby {
+    height: 100%;
+}
+
 .title {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -23,7 +31,7 @@
     font-weight: 400;
     color: #575757;
     font-size: 26px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 
@@ -73,10 +81,34 @@
     border-bottom: 2px solid #0BCBC0;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #575757;
+}
+
+.footer__link {
+    margin: 20px;
+    line-height: 0;
+}
+
+.footer__icon {
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: 0;
+}
+
 .team__member-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .member {
