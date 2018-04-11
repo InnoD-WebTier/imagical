@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={{minHeight: '100%', position: 'relative'}}>
     <Helmet
       title="imagiCal"
       meta={[
@@ -15,9 +16,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div>
+    <div style={{paddingBottom: 80}}>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
