@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const IndexPage = () => (
   <div>

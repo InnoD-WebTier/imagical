@@ -4,14 +4,16 @@ import 'bootstrap'
 import '../styles/contact.css'
 import mail_icon from "../images/mail_icon.png"
 import web_icon from "../images/web_icon.png"
+import "airtable/build/airtable.browser.js"
+
 
 const ContactPage = () => (
   <div>
 
     <h1 className="title">CONTACT</h1>
-    <h2 className="subheader">LEAVE US A NOTE</h2>
+    <h2 className="subheader">leave us a note</h2>
 
-    <ul className="nav nav-tabs" role="tablist">
+    <ul className="nav nav-tabs justify-content-center" role="tablist">
       <li role="presentation"><a href="#question" aria-controls="question" role="tab" data-toggle="tab">question</a></li>
       <li role="presentation"><a href="#request" aria-controls="request" role="tab" data-toggle="tab">request</a></li>
       <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">other</a></li>
@@ -46,7 +48,7 @@ const ContactPage = () => (
   </div>
 
 
-      <h2 className="subheader">OR FIND US HERE</h2>
+      <h2 className="subheader">or find us here</h2>
       <div className="container">
         <div className="row align-items-center padding-sm">
           <div className="col-lg-2 order-lg-1">
