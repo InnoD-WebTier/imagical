@@ -4,27 +4,27 @@ import logo from '../../images/imagi_logo.png'
 
 const Header = () => (
     <div className="header">
-        <div className="leftItems">
+        <div className="header__left-items">
             <Link to="/">
-                <img src={logo} alt="logo" className="logo" />
+                <img src={logo} alt="logo" className="header__logo" />
             </Link>
         </div>
-        <div className="rightItems">
-            <ul className="routingLinks">
-                <li className="route">
-                    <Link to="/contact" activeClassName="activeLink" className="link">contact</Link>
+        <div className="header__right-items">
+            <ul className="header__routing-links">
+                <li className="header__route">
+                    <Link to="/contact" activeClassName="header__link--active" className="header__link">contact</Link>
                 </li>
-                <li className="route">
-                    <Link to="/apply" activeClassName="activeLink" className="link">apply</Link>
+                <li className="header__route">
+                    <Link to="/apply" activeClassName="header__link--active" className="header__link">apply</Link>
                 </li>
-                <li className="route">
-                    <Link to="/partners" activeClassName="activeLink" className="link">clients & sponsors</Link>
+                <li className="header__route">
+                    <Link to="/partners" activeClassName="header__link--active" className="header__link">clients & sponsors</Link>
                 </li>
-                <li className="route">
-                    <Link to="/team" activeClassName="activeLink" className="link">team</Link>
+                <li className="header__route">
+                    <Link to="/team" activeClassName="header__link--active" className="header__link">team</Link>
                 </li>
-                <li className="route">
-                    <Link to="/about" activeClassName="activeLink" className="link">about</Link>
+                <li className="header__route">
+                    <Link to="/about" activeClassName="header__link--active" className="header__link">about</Link>
                 </li>
             </ul>
         </div>
