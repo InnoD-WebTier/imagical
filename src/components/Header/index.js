@@ -18,7 +18,7 @@ const Header = () => (
                     <Link to="/apply" activeClassName="header__link--active" className="header__link">apply</Link>
                 </li>
                 <li className="header__route">
-                    <Link to="/partners" activeClassName="header__link--active" className="header__link">clients & sponsors</Link>
+                    <Link to="/clientsandsponsors" activeClassName="header__link--active" className="header__link">clients & sponsors</Link>
                 </li>
                 <li className="header__route">
                     <Link to="/team" activeClassName="header__link--active" className="header__link">team</Link>
