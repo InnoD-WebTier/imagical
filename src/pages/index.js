@@ -1,13 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import logo from '../images/imagi_logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="title title--logo">
+        <img src={logo} />
+    </div>
+    <h2 className="subtitle">
+        UC Berkeley's award-winning creative consulting team
+    </h2>
   </div>
 )
 
