@@ -4,7 +4,7 @@ import 'bootstrap'
 import '../styles/contact.css'
 import mail_icon from "../images/mail_icon.png"
 import web_icon from "../images/web_icon.png"
-import "airtable/build/airtable.browser.js"
+//import "airtable/build/airtable.browser.js"
 
 
 const ContactPage = () => (
@@ -22,7 +22,7 @@ const ContactPage = () => (
   <div className="tab-content">
 
     <div role="tabpanel" className="tab-pane" id="request">
-    <iframe src="https://airtable.com/embed/shrXMCd05Wn1pCOhe?"
+    // <iframe src="https://airtable.com/embed/shrXMCd05Wn1pCOhe?"
     width="100%" height="700px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
 
