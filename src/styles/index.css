@@ -19,7 +19,7 @@ html, body {
       display: table-cell;
       position: relative;
       top: 0.5em;
-      width: 45%;
+      width: 47%;
     }
     &:before { right: 1.5%; }
     &:after { left: 1.5%; }
