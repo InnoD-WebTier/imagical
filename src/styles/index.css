@@ -19,10 +19,19 @@ html, body {
       display: table-cell;
       position: relative;
       top: 0.5em;
-      width: 45%;
+      width: 47%;
     }
     &:before { right: 1.5%; }
     &:after { left: 1.5%; }
+}
+
+.title--logo {
+    margin-top: 14vh;
+    &:before, &:after {
+      top: 1.9em;
+      width: 30%;
+      border-width: 4px;
+    }
 }
 
 .subtitle {
