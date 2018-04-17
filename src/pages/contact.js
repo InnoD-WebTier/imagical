@@ -4,14 +4,40 @@ import 'bootstrap'
 import '../styles/contact.css'
 import mail_icon from "../images/mail_icon.png"
 import web_icon from "../images/web_icon.png"
-import "airtable/build/airtable.browser.js"
+import Airtable from "airtable"
 
+class ContactPage extends React.Component{
 
-const ContactPage = () => (
+  //var Airtable = require('airtable');
+
+  constructor(props) {
+  super(props);
+  var base = new Airtable({apiKey: process.env.API}).base('app3iO3a9F5k0AMdn');
+  }
+
+  onChange(event) {
+  this.setState({
+    [event.target.id]: event.target.value
+  });
+  }
+
+  onSubmit(event) {
+    base('Contact Form').create({
+      "Name": this.props.name,
+      "Email": this.props.email,
+      "Message": this.props.message
+    }, function(err, record) {
+    if (err) { console.error(err); return; }
+    console.log(record.getId());
+    });
+  }
+
+render() {
+  return(
   <div>
 
     <h1 className="title">CONTACT</h1>
-    <h2 className="subheader">leave us a note</h2>
+    <h2 className="subtitle padding-title">leave us a note</h2>
 
     <ul className="nav nav-tabs justify-content-center" role="tablist">
       <li role="presentation"><a href="#question" aria-controls="question" role="tab" data-toggle="tab">question</a></li>
@@ -22,33 +48,58 @@ const ContactPage = () => (
   <div className="tab-content">
 
     <div role="tabpanel" className="tab-pane" id="request">
-    <iframe src="https://airtable.com/embed/shrXMCd05Wn1pCOhe?"
-    width="100%" height="700px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <div className="form-wrapper">
+    <form>
+      <label for="name">COMPANY</label>
+      <input onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
+
+      <label for="email">&nbsp; &nbsp; &nbsp; EMAIL</label>
+      <input onChange = {(event) => this.onChange(event)} type="text" id="label"/><br/>
+
+      <label for="message">MESSAGE</label>
+      <textarea onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
+
+      <input className="button" type="submit" value="send" onClick={(event) => this.onSubmit(event)}/>
+    </form>
+    </div>
     </div>
 
     <div role="tabpanel" className="tab-pane active" id="question">
     <div className="form-wrapper">
-    <form
-    action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfV5bknRNsihS5NawmwbxrQescFv0SUOW7lUqkK6vilY_Q89w/formResponse"
-    target="_blank">
+    <form>
       <label for="name">NAME</label>
-      <input name="entry.996513036" type="text" id="name"/><br/>
+      <input onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
 
       <label for="email">EMAIL</label>
-      <input name="entry.490849847" type="text" id="label"/><br/>
+      <input onChange = {(event) => this.onChange(event)} type="text" id="email"/><br/>
 
       <label for="message">MESSAGE</label>
-      <textarea name="entry.1212864203" type="textlong" id="message"/><br/>
+      <textarea onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
 
-      <input className="button" type="submit" value="send"/>
+      <input className="button" type="submit" value="send" onClick={(event) => this.onSubmit(event)}/>
     </form>
     </div>
     </div>
-    <div role="tabpanel" className="tab-pane" id="other">embed form 3</div>
+    <div role="tabpanel" className="tab-pane" id="other">
+    <div className="form-wrapper">
+    <form>
+      <label for="name">NAME</label>
+      <input onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
+
+      <label for="email">EMAIL</label>
+      <input onChange = {(event) => this.onChange(event)} type="text" id="label"/><br/>
+
+      <label for="message">MESSAGE</label>
+      <textarea onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
+
+      <input className="button" type="submit" value="send" onClick={(event) => this.onSubmit(event)}/>
+    </form>
+    </div>
+    </div>
   </div>
 
 
-      <h2 className="subheader">or find us here</h2>
+      <h2 className="subtitle padding-title">or find us here</h2>
       <div className="container">
         <div className="row align-items-center padding-sm">
           <div className="col-lg-2 order-lg-1">
@@ -77,6 +128,8 @@ const ContactPage = () => (
         </div>
       </div>
   </div>
-)
+);
+}
+}
 
-export default ContactPage
+export default ContactPage;

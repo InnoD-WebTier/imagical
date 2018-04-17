@@ -66,6 +66,11 @@
   padding-bottom: 50px
 }
 
+.padding-title {
+  padding-top: 30px;
+  padding-bottom: 50px
+}
+
 .link-accent {
   color: #808080;
 }
