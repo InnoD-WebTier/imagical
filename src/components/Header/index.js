@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import logo from '../../images/imagi_logo.png'
 
 const Header = () => (
-    <nav className="navbar navbar-expand-lg navbar-custom">
+    <nav className="navbar navbar-expand-md navbar-light navbar-custom">
         <Link to="/">
             <img src={logo} alt="logo" className="header__logo" />
         </Link>

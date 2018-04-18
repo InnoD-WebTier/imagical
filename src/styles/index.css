@@ -167,6 +167,10 @@ html, body {
     .member__overlay {
         bottom: 0;
     }
+
+    .header__route {
+        margin: 10px;
+    }
 }
 
 
