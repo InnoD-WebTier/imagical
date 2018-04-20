@@ -18,9 +18,15 @@ class ContactPage extends React.Component{
   }
 }
 
+  onFocus(event) {
+    this.setState({
+      submitted: false,
+    });
+  }
+
   onChange(event) {
   this.setState({
-    [event.target.id]: event.target.value
+    [event.target.id]: event.target.value,
   });
   }
 
@@ -37,8 +43,9 @@ class ContactPage extends React.Component{
       "Name": this.state.name,
       "Email": this.state.email,
       "Message": this.state.message
-    }, function(err, record) {
+    }, (err, record) => {
     if (err) { console.error(err); return; }
+    this.setState({name: '', email: '', message: ''});
     console.log(record.getId());
     });
   }
@@ -63,13 +70,20 @@ render() {
       <div className="form-wrapper">
       <form>
         <label htmlFor="name">COMPANY</label>
-        <input onChange = {(event) => this.onChange(event)} type="text" id="name" value={this.state.name}/><br/>
+        <input
+          onFocus = {(event) => this.onFocus(event)}
+          onChange = {(event) => this.onChange(event)}
+          type="text"
+          id="name"
+          value={this.state.name}/><br/>
 
         <label htmlFor="email">&nbsp; &nbsp; &nbsp; EMAIL</label>
-        <input onChange = {(event) => this.onChange(event)} type="text" id="label" value={this.state.email}/><br/>
+        <input onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="text" id="email" value={this.state.email}/><br/>
 
         <label htmlFor="message">MESSAGE</label>
-        <textarea onChange = {(event) => this.onChange(event)} type="textlong" id="message" value={this.state.message}/><br/>
+        <textarea onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="textlong" id="message" value={this.state.message}/><br/>
 
         <input className="button" type="submit" value="send" onClick={(event) => this.onSubmit(event, "Client Requests")}/>
       </form>
@@ -81,13 +95,16 @@ render() {
       <div className="form-wrapper">
       <form>
         <label htmlFor="name">NAME</label>
-        <input onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
+        <input onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
 
         <label htmlFor="email">EMAIL</label>
-        <input onChange = {(event) => this.onChange(event)} type="text" id="email"/><br/>
+        <input onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="text" id="email"/><br/>
 
         <label htmlFor="message">MESSAGE</label>
-        <textarea onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
+        <textarea onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
 
         <input className="button" type="submit" value="send" onClick={(event) => this.onSubmit(event, "Recruitment Questions")}/>
       </form>
@@ -98,13 +115,16 @@ render() {
       <div className="form-wrapper">
       <form>
         <label htmlFor="name">NAME</label>
-        <input onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
+        <input onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="text" id="name"/><br/>
 
         <label htmlFor="email">EMAIL</label>
-        <input onChange = {(event) => this.onChange(event)} type="text" id="label"/><br/>
+        <input onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="text" id="email"/><br/>
 
         <label htmlFor="message">MESSAGE</label>
-        <textarea onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
+        <textarea onFocus = {(event) => this.onFocus(event)}
+        onChange = {(event) => this.onChange(event)} type="textlong" id="message"/><br/>
 
         <input className="button" type="submit" value="send" onClick={(event) => this.onSubmit(event, "Other Questions")}/>
       </form>
