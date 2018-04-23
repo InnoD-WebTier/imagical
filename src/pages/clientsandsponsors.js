@@ -18,8 +18,12 @@ export default class LightboxClient extends Component {
     const { isOpen } = this.state;
 
     return (
-      <div>
+      <div class='imgContainer'>
         <h1 className="title">CLIENTS</h1>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy7ZnI46zizXRVoXLbV4Gl6LamFU6g5pqtJj1ijxnO8i-gJWp" width="100px" height="100px"/>
+            </div>
+        <div class="imgButton">
         <button type='button' onClick={() => this.setState({ isOpen: true})}>
           MissionU
         </button>
@@ -30,6 +34,7 @@ export default class LightboxClient extends Component {
             onCloseRequest = {() => this.setState({ isOpen: false })}
             />
           }
+          </div>
         </div>
         );
   }
