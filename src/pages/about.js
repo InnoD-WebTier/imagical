@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import 'bootstrap'
 import teamphoto from '../images/teamphoto.jpg'
 import { Image } from 'react-bootstrap';
+import Team from '../components/Team';
 
 export default class About extends React.Component {
     render() {
@@ -62,9 +63,174 @@ export default class About extends React.Component {
                 </div>
                 </div>
                 <div className="container">
-                  HIHIHIHIHIHIHI
+                  <div className="row">
+                    <div className="col-6">
+                      Fall Consulting Projects
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-6">
+                    These are 6-week long management consulting projects for
+                    clients of varying backgrounds, from local non-profits to
+                    billion dollar corporations. In the past year, we helped
+                    an ed-tech startup with their alumni engagement model,
+                    rebranded one of China’s largest social media platforms
+                    engage with the US audience, and helped a local non-profit
+                    craft a business model to best support food insecure students.
+                  </div>
+                  <div className="col-6">
+                    <div className="row">
+                      <div>
+                        <h2>Timeline</h2>
+                        <p> October - Mid November</p>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div>
+                        <h2>Timeline</h2>
+                        <p> October - Mid November</p>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div>
+                        <h2>Timeline</h2>
+                        <p> October - Mid November</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                </div>
+                <div className="container">
+                  <h1 className="title">About Us</h1>
+                </div>
+                <Team
+                  imgSrc={teamphoto}
+                  teamname ="Strategy"
+                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  deliverables ={[
+                    {
+                    deliverable: "Secondary research",
+                    },
+                    {
+                    deliverable: "Primary Research",
+                    },
+                    {
+                    deliverable: "Observational research",
+                    },
+                    {
+                    deliverable: "Research analysis & Summary",
+                    },
+                    {
+                    deliverable: "The Creative Brief",
+                    },
+                    {
+                    deliverable: "Concept-testing of executions",
+                    },
+                  ]}
+                  />
+                <Team
+                  imgSrc={teamphoto}
+                  teamname ="Strategy"
+                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  deliverables ={[
+                    {
+                    deliverable: "Secondary research",
+                    },
+                    {
+                    deliverable: "Primary Research",
+                    },
+                    {
+                    deliverable: "Observational research",
+                    },
+                    {
+                    deliverable: "Research analysis & Summary",
+                    },
+                    {
+                    deliverable: "The Creative Brief",
+                    },
+                    {
+                    deliverable: "Concept-testing of executions",
+                    },
+                  ]}
+                  />
+                <Team
+                  imgSrc={teamphoto}
+                  teamname ="Strategy"
+                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  deliverables ={[
+                    {
+                    deliverable: "Secondary research",
+                    },
+                    {
+                    deliverable: "Primary Research",
+                    },
+                    {
+                    deliverable: "Observational research",
+                    },
+                    {
+                    deliverable: "Research analysis & Summary",
+                    },
+                    {
+                    deliverable: "The Creative Brief",
+                    },
+                    {
+                    deliverable: "Concept-testing of executions",
+                    },
+                  ]}
+                  />
+                <Team
+                  imgSrc={teamphoto}
+                  teamname ="Strategy"
+                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  deliverables ={[
+                    {
+                    deliverable: "Secondary research",
+                    },
+                    {
+                    deliverable: "Primary Research",
+                    },
+                    {
+                    deliverable: "Observational research",
+                    },
+                    {
+                    deliverable: "Research analysis & Summary",
+                    },
+                    {
+                    deliverable: "The Creative Brief",
+                    },
+                    {
+                    deliverable: "Concept-testing of executions",
+                    },
+                  ]}
+                  />
+                <Team
+                  imgSrc={teamphoto}
+                  teamname ="Strategy"
+                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  deliverables ={[
+                    {
+                    deliverable: "Secondary research",
+                    },
+                    {
+                    deliverable: "Primary Research",
+                    },
+                    {
+                    deliverable: "Observational research",
+                    },
+                    {
+                    deliverable: "Research analysis & Summary",
+                    },
+                    {
+                    deliverable: "The Creative Brief",
+                    },
+                    {
+                    deliverable: "Concept-testing of executions",
+                    },
+                  ]}
+                  />
             </div>
+
+
         );
     }
 }
