@@ -1,3 +1,5 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
 html, body {
     height: 100%;
 }
@@ -176,7 +178,3 @@ html, body {
         bottom: 0;
     }
 }
-
-
-
-

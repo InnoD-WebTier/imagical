@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './index.css'
@@ -14,7 +13,11 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+      >
+      <script src="/popper/popper.js"></script>
+      <script src="/jquery/jquery.js"></script>
+      <script src="/bootstrap/bootstrap.min.js"></script>
+    </Helmet>
     <Header />
     <div style={{paddingBottom: 80}}>
       {children()}

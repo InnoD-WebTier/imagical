@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import 'bootstrap'
 import '../styles/contact.css'
 import mail_icon from "../images/mail_icon.png"
 import web_icon from "../images/web_icon.png"
