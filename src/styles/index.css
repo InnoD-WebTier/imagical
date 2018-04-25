@@ -162,6 +162,44 @@ html, body {
     margin: 3px;
 }
 
+.body__link {
+    text-decoration: none;
+    color: #0BCBC0;
+}
+
+.body__link:hover {
+    text-decoration: underline;
+    color: #0BCBC0;
+}
+
+.body__text {
+    color: #575757;
+    font-family: 'Lato', sans-serif;
+}
+
+.body__text_container {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.button {
+    padding: 6px 20px;
+    border: 2px solid #0BCBC0;
+    background-color: white;
+    color: #0BCBC0;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #0BCBC0;
+}
+
+
 @media only screen and (max-width: 768px) {
     .member__overlay {
         bottom: 0;
