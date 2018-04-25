@@ -14,9 +14,6 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
       >
-      <script src="/popper/popper.js"></script>
-      <script src="/jquery/jquery.js"></script>
-      <script src="/bootstrap/bootstrap.min.js"></script>
     </Helmet>
     <Header />
     <div style={{paddingBottom: 80}}>
