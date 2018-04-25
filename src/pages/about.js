@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import 'bootstrap'
 import teamphoto from '../images/teamphoto.jpg'
+import mediaphoto from '../images/mediaplanning.jpg'
+import productionphoto from '../images/production.jpg'
+import prphoto from '../images/publicrelations.jpg'
 import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
 
@@ -130,107 +133,96 @@ export default class About extends React.Component {
                   />
                 <Team
                   imgSrc={teamphoto}
-                  teamname ="Strategy"
-                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  teamname ="Creative"
+                  description = "Crafts, communicates, and guides execution of the campaign’s main idea. Tackles the challenge of articulating the brand or product’s unique value propositions in a way that is relevant, meaningful, and memorable to the consumer."
                   deliverables ={[
                     {
-                    deliverable: "Secondary research",
+                    deliverable: "Campaign slogan",
                     },
                     {
-                    deliverable: "Primary Research",
+                    deliverable: "Traditional ads (TV, Radio & Print)",
                     },
                     {
-                    deliverable: "Observational research",
+                    deliverable: "Point of sale ads",
                     },
                     {
-                    deliverable: "Research analysis & Summary",
+                    deliverable: "Static out of home ads",
                     },
                     {
-                    deliverable: "The Creative Brief",
+                    deliverable: "Digital Ads",
                     },
                     {
-                    deliverable: "Concept-testing of executions",
+                    deliverable: "Social Ads",
                     },
                   ]}
                   />
                 <Team
-                  imgSrc={teamphoto}
-                  teamname ="Strategy"
-                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  imgSrc={prphoto}
+                  teamname ="Public Relations"
+                  description = "Designs a cohesive public relations initiative that complements and extends the creative campaign by developing community programs, identifying strategic partnerships, and generating campaign awareness through organic media value."
                   deliverables ={[
                     {
-                    deliverable: "Secondary research",
+                    deliverable: "Interactive out of home ads"
                     },
                     {
-                    deliverable: "Primary Research",
+                    deliverable: "Experiential ads",
                     },
                     {
-                    deliverable: "Observational research",
+                    deliverable: "Strategic partnerships",
                     },
                     {
-                    deliverable: "Research analysis & Summary",
-                    },
-                    {
-                    deliverable: "The Creative Brief",
-                    },
-                    {
-                    deliverable: "Concept-testing of executions",
+                    deliverable: "Amplification recommendations",
                     },
                   ]}
                   />
                 <Team
-                  imgSrc={teamphoto}
-                  teamname ="Strategy"
-                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  imgSrc={mediaphoto}
+                  teamname ="Media Planning"
+                  description = "Develops a multi-million dollar purchasing plan by evaluating and researching the profitability of different media vehicles (i.e. TV, internet, social, etc.). This department creates the most effective strategy of placing ads through competitive benchmarking, consumer trend evaluations, and quantitative market analysis."
                   deliverables ={[
                     {
-                    deliverable: "Secondary research",
+                    deliverable: "Media consideration set",
                     },
                     {
-                    deliverable: "Primary Research",
+                    deliverable: "Tailored media funnel",
                     },
                     {
-                    deliverable: "Observational research",
+                    deliverable: "Media strategy per execution",
                     },
                     {
-                    deliverable: "Research analysis & Summary",
+                    deliverable: "Media flighting table",
                     },
                     {
-                    deliverable: "The Creative Brief",
+                    deliverable: "Budget allocation per execution",
                     },
                     {
-                    deliverable: "Concept-testing of executions",
+                    deliverable: "Optimization recommendations",
                     },
                   ]}
                   />
                 <Team
-                  imgSrc={teamphoto}
-                  teamname ="Strategy"
-                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                  imgSrc={productionphoto}
+                  teamname ="Production"
+                  description = "Develops a multi-million dollar purchasing plan by evaluating and researching the profitability of different media vehicles (i.e. TV, internet, social, etc.). This department creates the most effective strategy of placing ads through competitive benchmarking, consumer trend evaluations, and quantitative market analysis."
                   deliverables ={[
                     {
-                    deliverable: "Secondary research",
+                    deliverable: "The plansbook",
                     },
                     {
-                    deliverable: "Primary Research",
+                    deliverable: "Presentation deck",
                     },
                     {
-                    deliverable: "Observational research",
+                    deliverable: "Recorded and edited video ads",
                     },
                     {
-                    deliverable: "Research analysis & Summary",
+                    deliverable: "Digital & Social execution mockups",
                     },
                     {
-                    deliverable: "The Creative Brief",
-                    },
-                    {
-                    deliverable: "Concept-testing of executions",
+                    deliverable: "Printed physical execution props",
                     },
                   ]}
                   />
             </div>
-
-
         );
     }
 }
