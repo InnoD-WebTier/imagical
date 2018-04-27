@@ -11,6 +11,7 @@
     "gatsby-plugin-react-helmet": "^2.0.6",
     "gatsby-plugin-sass": "^1.0.25",
     "jquery": "^3.3.1",
+    "netlify-cms": "^1.7.0",
     "popper.js": "^1.14.2",
     "react-bootstrap": "^0.32.1",
     "react-helmet": "^5.2.0"
