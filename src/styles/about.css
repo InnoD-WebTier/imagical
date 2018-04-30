@@ -12,3 +12,29 @@
   border-left-style: solid;
   padding-left: 10px;
 }
+
+.column-title-team {
+  border-left-color: rgba(11, 203, 192, .8);
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 10px;
+}
+
+.list-container {
+  list-style-type: none;
+}
+
+.list-container {
+  line-height: 70%;
+}
+
+.btn-position {
+  position: relative;
+}
+
+.btn-apply {
+  padding: 3px 20px;
+  margin: 5px 0px;
+  position: absolute;
+  bottom: 0;
+}

@@ -75,7 +75,7 @@ export default class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col-6">
-                      Fall Consulting Projects
+                      <span className="column-title-project"></span>Fall Consulting Projects
                     </div>
                   </div>
                   <div className="row">
