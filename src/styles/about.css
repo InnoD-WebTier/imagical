@@ -1,0 +1,14 @@
+.column-title-project {
+  border-left-color: rgba(11, 203, 192, .8);
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-top: 15px;
+  padding-right: 10px
+}
+
+.column-title-timeline {
+  border-left-color: rgba(11, 203, 192, .8);
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 10px;
+}

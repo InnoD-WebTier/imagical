@@ -7,6 +7,7 @@ import productionphoto from '../images/production.jpg'
 import prphoto from '../images/publicrelations.jpg'
 import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
+import '../styles/about.css';
 
 export default class About extends React.Component {
     render() {
@@ -30,7 +31,7 @@ export default class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col-6">
-                      Fall Consulting Projects
+                      <span className="column-title-project"></span>Fall Consulting Projects
                     </div>
                   </div>
                   <div className="row">
@@ -46,20 +47,26 @@ export default class About extends React.Component {
                   <div className="col-6">
                     <div className="row">
                       <div>
-                        <h2>Timeline</h2>
-                        <p> October - Mid November</p>
+                        <div className="column-title-timeline">
+                          <h2>Timeline</h2>
+                          <p> October - Mid November</p>
+                        </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
-                        <h2>Timeline</h2>
-                        <p> October - Mid November</p>
+                        <div className="column-title-timeline">
+                          <h2>Timeline</h2>
+                          <p> October - Mid November</p>
+                        </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
-                        <h2>Timeline</h2>
-                        <p> October - Mid November</p>
+                        <div className="column-title-timeline">
+                          <h2>Timeline</h2>
+                          <p> October - Mid November</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -84,20 +91,26 @@ export default class About extends React.Component {
                   <div className="col-6">
                     <div className="row">
                       <div>
-                        <h2>Timeline</h2>
-                        <p> October - Mid November</p>
+                        <div className="column-title-timeline">
+                          <h2>Timeline</h2>
+                          <p> October - Mid November</p>
+                        </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
-                        <h2>Timeline</h2>
-                        <p> October - Mid November</p>
+                        <div className="column-title-timeline">
+                          <h2>Timeline</h2>
+                          <p> October - Mid November</p>
+                        </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
-                        <h2>Timeline</h2>
-                        <p> October - Mid November</p>
+                        <div className="column-title-timeline">
+                          <h2>Timeline</h2>
+                          <p> October - Mid November</p>
+                        </div>
                       </div>
                     </div>
                   </div>
