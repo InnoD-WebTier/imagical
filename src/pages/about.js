@@ -35,7 +35,9 @@ export default class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col-6">
-                      <span className="column-title-project"></span>Fall Consulting Projects
+                      <div className="column-title-project">
+                        <h1>Fall Consulting Projects</h1>
+                      </div>
                     </div>
                   </div>
                   <div className="row">
@@ -60,16 +62,17 @@ export default class About extends React.Component {
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
-                          <h2>Timeline</h2>
-                          <p> October - Mid November</p>
+                          <h2>Key deliverables</h2>
+                          <p>Midterm & final presentation</p>
                         </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
-                          <h2>Timeline</h2>
-                          <p> October - Mid November</p>
+                          <h2>Who</h2>
+                          <p> Diverse selection of members</p>
+                          <p> 2 Project Managers, 5-6 Consultants</p>
                         </div>
                       </div>
                     </div>
@@ -79,41 +82,51 @@ export default class About extends React.Component {
                 <div className="container">
                   <div className="row">
                     <div className="col-6">
-                      <span className="column-title-project"></span>Fall Consulting Projects
+                      <div className="column-title-project">
+                        <h1>The National Student Advertising Competition</h1>
+                      </div>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-6">
-                    These are 6-week long management consulting projects for
-                    clients of varying backgrounds, from local non-profits to
-                    billion dollar corporations. In the past year, we helped
-                    an ed-tech startup with their alumni engagement model,
-                    rebranded one of China’s largest social media platforms
-                    engage with the US audience, and helped a local non-profit
-                    craft a business model to best support food insecure students.
+                      imagiCal is the only student organization at Berkeley that competes
+                      in the National Student Advertising Competition (NSAC) every year,
+                      which is the main reason why we only recruit members once a year in
+                      the fall. NSAC is the premier college advertising competition that
+                      provides more than 2,000 college students the real-world experience
+                      of creating a strategic advertising/marketing campaign for a corporate
+                      client. Students develop a marketing plan and then pitch their work to
+                      advertising professionals at the district, semi-final and national levels.
+                      Learn more about the AAF by visiting their website!
                   </div>
-                  <div className="col-6">
+                  <div className="col-6 imagical-copy--styling">
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
                           <h2>Timeline</h2>
-                          <p> October - Mid November</p>
+                          <p>Mid November - Mid April (extends to
+                              early June if we make it to Nationals!)
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
-                          <h2>Timeline</h2>
-                          <p> October - Mid November</p>
+                          <h2>Key Deliverables</h2>
+                          <p>Plansbook, Regionals presentation, Semifinals phone call, National presentation</p>
                         </div>
                       </div>
                     </div>
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
-                          <h2>Timeline</h2>
-                          <p> October - Mid November</p>
+                          <h2>Who</h2>
+                          <p>
+                           All 30 students working together to closely resemble a
+                           real-world advertising agency with 5 core teams:
+                           Strategy, Creative, PR, Media & Production.
+                           </p>
                         </div>
                       </div>
                     </div>
