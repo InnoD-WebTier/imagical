@@ -1,5 +1,7 @@
 $font-stack: Lato , sans-serif;
 $primary-color: #575757;
+$circle-color: #0BCBC0;
+$team-ratio: 80%;
 
 .imagical-copy--styling {
     font-family: $font-stack;
@@ -9,6 +11,20 @@ $primary-color: #575757;
 .container--img-sizing {
   width: 55%;
   margin: 32px auto auto auto;
+}
+
+.img--team-sizing {
+  width: $team-ratio;
+  margin: 32px auto auto auto;
+}
+
+.row--resize {
+  display: flex;
+  width: $team-ratio;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .container--intro {
@@ -29,6 +45,9 @@ $primary-color: #575757;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .container-circle--geo {
   margin:auto;
@@ -38,7 +57,7 @@ $primary-color: #575757;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #4679BD;
+  background: $circle-color;
 }
 
 .container--sizing {
@@ -47,6 +66,12 @@ $primary-color: #575757;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 10px;
+  margin: 5px;
+  h3 {
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 .column-title-project {
@@ -77,6 +102,10 @@ $primary-color: #575757;
 
 .list-container {
   list-style-type: none;
+  border-left-color: rgba(11, 203, 192, .8);
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 10px;
 }
 
 .list-container {
