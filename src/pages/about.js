@@ -32,7 +32,7 @@ export default class About extends React.Component {
                 <div className="container">
                 <h1 className="title">What We Do</h1>
                 </div>
-                <div className="container">
+                <div className="container imagical-projects--spacing">
                   <div className="row">
                     <div className="col-6">
                       <div className="column-title-project">
@@ -50,7 +50,7 @@ export default class About extends React.Component {
                     engage with the US audience, and helped a local non-profit
                     craft a business model to best support food insecure students.
                   </div>
-                  <div className="col-6">
+                  <div className="col-6 imagical-copy--styling">
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
@@ -134,7 +134,25 @@ export default class About extends React.Component {
                 </div>
                 </div>
                 <div className="container">
-                  <h1 className="title">About Us</h1>
+                  <h1 className="title"> HOW WE DO IT </h1>
+                  <div className="container-circle-parent">
+                    <div className="container-circle-child">
+                      Strategy
+                    </div>
+                    <div>
+                      Creative
+                    </div>
+                    <div>
+                      Public Relations
+                    </div>
+                    <div>
+                      Media Plannning
+                    </div>
+                    <div>
+                      Production
+                    </div>
+                  </div>
+                  wow
                 </div>
                 <Team
                   imgSrc={teamphoto}
