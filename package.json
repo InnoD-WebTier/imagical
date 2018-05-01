@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "InnoD Web Team <web@innovativedesign.club>",
   "dependencies": {
-    "airtable": "^0.5.2",
+    "airtable": "^0.5.3",
     "bootstrap": "^4.0.0",
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
