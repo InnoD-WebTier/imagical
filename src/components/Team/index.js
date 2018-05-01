@@ -18,7 +18,7 @@ export default class Team extends React.Component {
                     <h2 className="column-title-team">{this.props.teamname}</h2>
                     <p>{this.props.description}</p>
                 </div>
-                <a className="col-btn--flex" href="#" type="button"> Apply</a>
+                <a className="col-btn--flex button" href="#"> Apply</a>
               </div>
               <div className="col-lg-6">
                 <div>

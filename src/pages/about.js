@@ -10,6 +10,7 @@ import prphoto from '../images/publicrelations.jpg'
 import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
 import '../styles/about.scss';
+import '../styles/index.css';
 
 export default class About extends React.Component {
     render() {
