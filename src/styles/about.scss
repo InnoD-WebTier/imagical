@@ -1,3 +1,25 @@
+$font-stack: Lato , sans-serif;
+$primary-color: #575757;
+
+.container--img-sizing {
+  width: 55%;
+  margin: 32px auto auto auto;
+}
+
+.container--intro {
+  width: 60%;
+  margin: auto;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 18px;
+  color: $primary-color;
+  text-align: left;
+  line-height: 1.7em;
+    p {
+      margin-left: 15px;
+    }
+}
+
 .column-title-project {
   border-left-color: rgba(11, 203, 192, .8);
   border-left-width: 3px;

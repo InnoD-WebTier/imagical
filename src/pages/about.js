@@ -7,7 +7,7 @@ import productionphoto from '../images/production.jpg'
 import prphoto from '../images/publicrelations.jpg'
 import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
-import '../styles/about.css';
+import '../styles/about.scss';
 
 export default class About extends React.Component {
     render() {
@@ -15,14 +15,18 @@ export default class About extends React.Component {
             <div>
                 <h1 className="title">About Us</h1>
                 <div className="container">
-                  <Image src={teamphoto} responsive />
+                  <div className="container--img-sizing">
+                    <Image src={teamphoto} responsive />
+                  </div>
                   <div className="row">
-                    <p>
-                    imagiCal, established in 1980, is the Berkeley chapter of
-                    the American Advertising Federation Our organization
-                    functions as a fully student-run advertising agency and
-                    creative consultancy comprised of around 30 undergraduates with a diverse array interests, academic fields, and backgrounds. We are researchers, athletes, businesspeople, artists, and more. Many of our alumni graduate to top firms in consulting, banking, and tech industries, as well as to academia, science and advertising. Learn more about our current members here [link to meet the team]
-                    </p>
+                    <div className="container--intro">
+                      <p>
+                      imagiCal, established in 1980, is the Berkeley chapter of
+                      the American Advertising Federation Our organization
+                      functions as a fully student-run advertising agency and
+                      creative consultancy comprised of around 30 undergraduates with a diverse array interests, academic fields, and backgrounds. We are researchers, athletes, businesspeople, artists, and more. Many of our alumni graduate to top firms in consulting, banking, and tech industries, as well as to academia, science and advertising. Learn more about our current members here [link to meet the team]
+                      </p>
+                  </div>
                   </div>
                 </div>
                 <div className="container">
