@@ -13,12 +13,12 @@ export default class Team extends React.Component {
               <Image src={this.props.imgSrc} responsive />
             </div>
             <div className="row--resize">
-              <div className="btn-position col-lg-6">
-                <div>
+              <div className="col--custom">
+                <div className="col-team--start">
                     <h2 className="column-title-team">{this.props.teamname}</h2>
                     <p>{this.props.description}</p>
                 </div>
-                <a className="btn-apply" href="#" type="button"> Apply</a>
+                <a className="col-btn--flex" href="#" type="button"> Apply</a>
               </div>
               <div className="col-lg-6">
                 <div>

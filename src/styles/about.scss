@@ -3,6 +3,15 @@ $primary-color: #575757;
 $circle-color: #0BCBC0;
 $team-ratio: 80%;
 
+.container--spacing {
+  margin-bottom: 80px;
+}
+
+.title--custom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .imagical-copy--styling {
     font-family: $font-stack;
     color: $primary-color;
@@ -10,12 +19,48 @@ $team-ratio: 80%;
 
 .container--img-sizing {
   width: 55%;
-  margin: 32px auto auto auto;
+  margin: 50px auto auto auto;
 }
 
 .img--team-sizing {
   width: $team-ratio;
   margin: 32px auto auto auto;
+}
+@media (min-width: 992px) {
+  .col--custom {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col--timeline {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.col--custom {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left:0px
+}
+
+.col--timeline {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 10%;
+}
+
+.col-btn--flex {
+  align-self: flex-start;
 }
 
 .row--resize {
@@ -81,6 +126,7 @@ $team-ratio: 80%;
   padding-top: 15px;
   padding-right: 10px;
   padding-left: 15px;
+  margin-bottom: 15px;
   color: $primary-color;
   font-family: $font-stack;
 }

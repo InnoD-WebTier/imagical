@@ -4,6 +4,8 @@ import 'bootstrap'
 import teamphoto from '../images/teamphoto.jpg'
 import mediaphoto from '../images/mediaplanning.jpg'
 import productionphoto from '../images/production.jpg'
+import creativephoto from '../images/creative.jpg'
+import strategyphoto from '../images/strategy.jpg'
 import prphoto from '../images/publicrelations.jpg'
 import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
@@ -12,7 +14,7 @@ import '../styles/about.scss';
 export default class About extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container--spacing">
                 <h1 className="title">About Us</h1>
                 <div className="container">
                   <div className="container--img-sizing">
@@ -30,18 +32,18 @@ export default class About extends React.Component {
                   </div>
                 </div>
                 <div className="container">
-                <h1 className="title">What We Do</h1>
+                <h1 className="title title--custom">What We Do</h1>
                 </div>
                 <div className="container imagical-projects--spacing">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col--custom">
                       <div className="column-title-project">
                         <h1>Fall Consulting Projects</h1>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col--custom">
                     These are 6-week long management consulting projects for
                     clients of varying backgrounds, from local non-profits to
                     billion dollar corporations. In the past year, we helped
@@ -50,7 +52,7 @@ export default class About extends React.Component {
                     engage with the US audience, and helped a local non-profit
                     craft a business model to best support food insecure students.
                   </div>
-                  <div className="col-6 imagical-copy--styling">
+                  <div className="col--timeline imagical-copy--styling">
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
@@ -81,14 +83,14 @@ export default class About extends React.Component {
                 </div>
                 <div className="container">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col--custom">
                       <div className="column-title-project">
                         <h1>The National Student Advertising Competition</h1>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col--custom">
                       imagiCal is the only student organization at Berkeley that competes
                       in the National Student Advertising Competition (NSAC) every year,
                       which is the main reason why we only recruit members once a year in
@@ -99,7 +101,7 @@ export default class About extends React.Component {
                       advertising professionals at the district, semi-final and national levels.
                       Learn more about the AAF by visiting their website!
                   </div>
-                  <div className="col-6 imagical-copy--styling">
+                  <div className="col--timeline imagical-copy--styling">
                     <div className="row">
                       <div>
                         <div className="column-title-timeline">
@@ -134,7 +136,7 @@ export default class About extends React.Component {
                 </div>
                 </div>
                 <div className="container imagical-copy--styling">
-                  <h1 className="title"> How We Do It</h1>
+                  <h1 className="title title--custom"> How We Do It</h1>
                   <div className="container-circle-parent">
                     <div className="container--sizing">
                         <div className="container-circle--geo">
@@ -164,7 +166,7 @@ export default class About extends React.Component {
                   </div>
                 </div>
                 <Team
-                  imgSrc={teamphoto}
+                  imgSrc={strategyphoto}
                   teamname ="Strategy"
                   description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
                   deliverables ={[
@@ -189,7 +191,7 @@ export default class About extends React.Component {
                   ]}
                   />
                 <Team
-                  imgSrc={teamphoto}
+                  imgSrc={creativephoto}
                   teamname ="Creative"
                   description = "Crafts, communicates, and guides execution of the campaign’s main idea. Tackles the challenge of articulating the brand or product’s unique value propositions in a way that is relevant, meaningful, and memorable to the consumer."
                   deliverables ={[
