@@ -133,26 +133,35 @@ export default class About extends React.Component {
                   </div>
                 </div>
                 </div>
-                <div className="container">
-                  <h1 className="title"> HOW WE DO IT </h1>
+                <div className="container imagical-copy--styling">
+                  <h1 className="title"> How We Do It</h1>
                   <div className="container-circle-parent">
-                    <div className="container-circle-child">
-                      Strategy
+                    <div className="container--sizing">
+                        <div className="container-circle--geo">
+                        </div>
+                        <h3>Strategy</h3>
                     </div>
-                    <div>
-                      Creative
+                    <div className="container--sizing">
+                        <div className="container-circle--geo">
+                        </div>
+                        <h3>Creative</h3>
                     </div>
-                    <div>
-                      Public Relations
+                    <div className="container--sizing">
+                        <div className="container-circle--geo">
+                        </div>
+                        <h3>Public Relations</h3>
                     </div>
-                    <div>
-                      Media Plannning
+                    <div className="container--sizing">
+                        <div className="container-circle--geo">
+                        </div>
+                        <h3>Media Planning</h3>
                     </div>
-                    <div>
-                      Production
+                    <div className="container--sizing">
+                        <div className="container-circle--geo">
+                        </div>
+                        <h3>Production</h3>
                     </div>
                   </div>
-                  wow
                 </div>
                 <Team
                   imgSrc={teamphoto}
