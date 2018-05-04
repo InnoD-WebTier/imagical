@@ -22,7 +22,7 @@ export default class About extends React.Component {
                   </div>
                   <div className="row">
                     <div className="container--intro">
-                      <p>
+                      <p className="intro--history">
                       imagiCal, established in 1980, is the Berkeley chapter of
                       the American Advertising Federation Our organization
                       functions as a fully student-run advertising agency and
