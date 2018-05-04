@@ -10,13 +10,12 @@ import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
 import '../styles/about.scss';
 import '../styles/index.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default class About extends React.Component {
     render() {
         return (
             <div className="container--spacing">
-                <h1 className="title">About Us</h1>
+                <h1 className="title">ABOUT US</h1>
                 <div className="container">
                   <div className="container--img-sizing">
                     <Image src={teamphoto} responsive />
@@ -33,7 +32,7 @@ export default class About extends React.Component {
                   </div>
                 </div>
                 <div className="container">
-                <h1 className="title title--custom">What We Do</h1>
+                <h1 className="title title--custom">WHAT WE DO</h1>
                 </div>
                 <div className="container imagical-projects--spacing">
                   <div className="row">
@@ -137,7 +136,7 @@ export default class About extends React.Component {
                 </div>
                 </div>
                 <div className="container imagical-copy--styling">
-                  <h1 className="title title--custom"> How We Do It</h1>
+                  <h1 className="title title--custom"> HOW WE DO IT</h1>
                   <div className="container-circle-parent">
                     <div className="container--sizing">
                         <div className="container-circle--geo">
