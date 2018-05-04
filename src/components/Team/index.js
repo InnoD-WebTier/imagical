@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap'
 import { Image } from 'react-bootstrap';
 
 export default class Team extends React.Component {

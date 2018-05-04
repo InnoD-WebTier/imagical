@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import 'bootstrap'
 import teamphoto from '../images/teamphoto.jpg'
 import mediaphoto from '../images/mediaplanning.jpg'
 import productionphoto from '../images/production.jpg'
