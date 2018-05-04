@@ -10,6 +10,7 @@ import { Image } from 'react-bootstrap';
 import Team from '../components/Team';
 import '../styles/about.scss';
 import '../styles/index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default class About extends React.Component {
     render() {
