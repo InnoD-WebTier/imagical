@@ -141,27 +141,27 @@ export default class About extends React.Component {
                     <div className="container--sizing">
                         <div className="container-circle--geo">
                         </div>
-                        <h3>Strategy</h3>
+                        <h3 className="container--category">Strategy</h3>
                     </div>
                     <div className="container--sizing">
                         <div className="container-circle--geo">
                         </div>
-                        <h3>Creative</h3>
+                        <h3 className="container--category">Creative</h3>
                     </div>
                     <div className="container--sizing">
                         <div className="container-circle--geo">
                         </div>
-                        <h3>Public Relations</h3>
+                        <h3 className="container--category">Public Relations</h3>
                     </div>
                     <div className="container--sizing">
                         <div className="container-circle--geo">
                         </div>
-                        <h3>Media Planning</h3>
+                        <h3 className="container--category">Media Planning</h3>
                     </div>
                     <div className="container--sizing">
                         <div className="container-circle--geo">
                         </div>
-                        <h3>Production</h3>
+                        <h3 className="container--category">Production</h3>
                     </div>
                   </div>
                 </div>
