@@ -9,7 +9,7 @@
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-react-helmet": "^2.0.6",
-    "gatsby-plugin-sass": "^1.0.25",
+    "gatsby-plugin-sass": "^1.0.26",
     "jquery": "^3.3.1",
     "lightbox-react": "^0.1.5",
     "popper.js": "^1.14.2",
