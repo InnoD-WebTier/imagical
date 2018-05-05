@@ -1,4 +1,25 @@
+.custom-content > .custom-tab-pane {
+  display: none;
+}
+.custom-content > .active {
+  display: block;
+  background-color: white;
+}
+
+a.button.active.show{
+  background-color: white;
+}
+
+.btn-custom {
+  margin: 10px;
+}
+.btn-custom > a
+
 .container--spacing {
+  margin-bottom: 80px;
+}
+
+.container--team {
   margin-bottom: 80px;
 }
 
