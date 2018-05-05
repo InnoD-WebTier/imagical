@@ -7,7 +7,8 @@
 }
 
 a.button.active.show{
-  background-color: white;
+  background-color: #0BCBC0;
+  color: white;
 }
 
 .btn-custom {
