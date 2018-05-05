@@ -147,7 +147,7 @@ export default class About extends React.Component {
                   <h1 className="title title--custom"> HOW WE DO IT</h1>
                   <ul className="nav justify-content-center">
                     <li className="btn-custom">
-                        <a className="button" data-toggle="tab" href="#panel11" role="tab">Strategy</a>
+                        <a className="button active" data-toggle="tab" href="#panel11" role="tab">Strategy</a>
                     </li>
                     <li className="btn-custom">
                         <a className="button" data-toggle="tab" href="#panel12" role="tab">Creative</a>

@@ -10,6 +10,10 @@ a.button.active.show{
   background-color: #0BCBC0;
   color: white;
 }
+a.button.active{
+  background-color: #0BCBC0;
+  color: white;
+}
 
 .btn-custom {
   margin: 10px;
