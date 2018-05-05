@@ -7,12 +7,20 @@ import creativephoto from '../images/creative.jpg'
 import strategyphoto from '../images/strategy.jpg'
 import prphoto from '../images/publicrelations.jpg'
 import { Image } from 'react-bootstrap';
+import { Tabs } from 'react-bootstrap';
+import { Tab } from 'react-bootstrap';
 import Team from '../components/Team';
 import '../styles/about.css';
 import '../styles/index.css';
 
 export default class About extends React.Component {
+
     render() {
+        let strategyDelibs =[{ deliverable: "Secondary research",},{ deliverable: "Primary Research",},{ deliverable: "Observational research",},{ deliverable: "Research analysis & Summary", }, { deliverable: "The Creative Brief", },{ deliverable: "Concept-testing of executions",}, ];
+        let creativeDelibs =[{deliverable: "Campaign slogan",},{deliverable: "Traditional ads (TV, Radio & Print)",},{deliverable: "Point of sale ads",},{deliverable: "Static out of home ads",},{deliverable: "Digital Ads",},{deliverable: "Social Ads",},];
+        let prDelibs = [{deliverable: "Interactive out of home ads"},{deliverable: "Experiential ads",},{deliverable: "Strategic partnerships",},{deliverable: "Amplification recommendations",},];
+        let mediaDelibs = [{deliverable: "Media consideration set",},{deliverable: "Tailored media funnel",},{deliverable: "Media strategy per execution",},{deliverable: "Media flighting table",},{deliverable: "Budget allocation per execution",},{deliverable: "Optimization recommendations",},];
+        let productionDelibs = [{deliverable: "The plansbook",},{deliverable: "Presentation deck",},{deliverable: "Recorded and edited video ads",},{deliverable: "Digital & Social execution mockups",},{deliverable: "Printed physical execution props",},];
         return (
             <div className="container--spacing">
                 <h1 className="title">ABOUT US</h1>
@@ -137,173 +145,65 @@ export default class About extends React.Component {
                 </div>
                 <div className="container imagical-copy--styling">
                   <h1 className="title title--custom"> HOW WE DO IT</h1>
-                  <div className="container">
-                      <div className="row">
-                        <div className="col-sm-2">
-                            <button className="button container--sizing" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              Strategy
-                            </button>
-                        </div>
-                        <div className="col-sm">
-                            <button className="button container--sizing" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Creative
-                            </button>
-                        </div>
-                        <div className="col-sm mr-3">
-                          <button className="button container--sizing" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Public Relations
-                          </button>
-                        </div>
-                        <div className="col-sm">
-                          <button className="button container--sizing" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Media Planning
-                          </button>
-                        </div>
-                        <div className="col-sm-2">
-                          <button className="button container--sizing" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Production
-                          </button>
-                        </div>
-                      </div>
+                  <ul className="nav justify-content-center">
+                    <li className="btn-custom">
+                        <a className="button" data-toggle="tab" href="#panel11" role="tab">Strategy</a>
+                    </li>
+                    <li className="btn-custom">
+                        <a className="button" data-toggle="tab" href="#panel12" role="tab">Creative</a>
+                    </li>
+                    <li className="btn-custom">
+                        <a className="button" data-toggle="tab" href="#panel13" role="tab">Public Relations</a>
+                    </li>
+                    <li className="btn-custom">
+                        <a className="button" data-toggle="tab" href="#panel14" role="tab">Media Planning</a>
+                    </li>
+                    <li className="btn-custom">
+                        <a className="button" data-toggle="tab" href="#panel15" role="tab">Production</a>
+                    </li>
+                  </ul>
                 </div>
-                <div className="collapse" id="collapseOne">
-                  <div class="card card-body">
-                  <Team
-                  imgSrc={strategyphoto}
-                  teamname ="Strategy"
-                  description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
-                  deliverables ={[
-                    {
-                    deliverable: "Secondary research",
-                    },
-                    {
-                    deliverable: "Primary Research",
-                    },
-                    {
-                    deliverable: "Observational research",
-                    },
-                    {
-                    deliverable: "Research analysis & Summary",
-                    },
-                    {
-                    deliverable: "The Creative Brief",
-                    },
-                    {
-                    deliverable: "Concept-testing of executions",
-                    },
-                  ]}
-                  />
+              <div className="custom-content">
+                  <div className="custom-tab-pane fade in show active" id="panel11" role="tabpanel">
+                    <Team
+                      imgSrc={strategyphoto}
+                      teamname ="Strategy"
+                      description = "Gathers and analyzes the primary and secondary market research that is used to determine the campaign’s target market. This department is in charge of creating a single, unified theme and strategy that is applied to all aspects of the marketing campaign."
+                      deliverables ={strategyDelibs}
+                      />
                   </div>
-                </div>
-
-                <div className="collapse" id="collapseTwo">
-                  <div class="card card-body">
-                  <Team
-                  imgSrc={creativephoto}
-                  teamname ="Creative"
-                  description = "Crafts, communicates, and guides execution of the campaign’s main idea. Tackles the challenge of articulating the brand or product’s unique value propositions in a way that is relevant, meaningful, and memorable to the consumer."
-                  deliverables ={[
-                    {
-                    deliverable: "Campaign slogan",
-                    },
-                    {
-                    deliverable: "Traditional ads (TV, Radio & Print)",
-                    },
-                    {
-                    deliverable: "Point of sale ads",
-                    },
-                    {
-                    deliverable: "Static out of home ads",
-                    },
-                    {
-                    deliverable: "Digital Ads",
-                    },
-                    {
-                    deliverable: "Social Ads",
-                    },
-                  ]}
-                  />
+                  <div className="custom-tab-pane fade" id="panel12" role="tabpanel">
+                    <Team
+                      imgSrc={creativephoto}
+                      teamname ="Creative"
+                      description = "Crafts, communicates, and guides execution of the campaign’s main idea. Tackles the challenge of articulating the brand or product’s unique value propositions in a way that is relevant, meaningful, and memorable to the consumer."
+                      deliverables ={creativeDelibs}
+                      />
                   </div>
-                </div>
-
-                <div className="collapse" id="collapseThree">
-                  <div class="card card-body">
-                  <Team
-                  imgSrc={prphoto}
-                  teamname ="Public Relations"
-                  description = "Designs a cohesive public relations initiative that complements and extends the creative campaign by developing community programs, identifying strategic partnerships, and generating campaign awareness through organic media value."
-                  deliverables ={[
-                    {
-                    deliverable: "Interactive out of home ads"
-                    },
-                    {
-                    deliverable: "Experiential ads",
-                    },
-                    {
-                    deliverable: "Strategic partnerships",
-                    },
-                    {
-                    deliverable: "Amplification recommendations",
-                    },
-                  ]}
-                  />
+                  <div className="custom-tab-pane fade" id="panel13" role="tabpanel">
+                    <Team
+                      imgSrc={prphoto}
+                      teamname ="Public Relations"
+                      description = "Designs a cohesive public relations initiative that complements and extends the creative campaign by developing community programs, identifying strategic partnerships, and generating campaign awareness through organic media value."
+                      deliverables ={prDelibs}
+                      />
                   </div>
-                </div>
-                <div className="collapse" id="collapseFour">
-                  <div class="card card-body">
-                  <Team
-                  imgSrc={mediaphoto}
-                  teamname ="Media Planning"
-                  description = "Develops a multi-million dollar purchasing plan by evaluating and researching the profitability of different media vehicles (i.e. TV, internet, social, etc.). This department creates the most effective strategy of placing ads through competitive benchmarking, consumer trend evaluations, and quantitative market analysis."
-                  deliverables ={[
-                    {
-                    deliverable: "Media consideration set",
-                    },
-                    {
-                    deliverable: "Tailored media funnel",
-                    },
-                    {
-                    deliverable: "Media strategy per execution",
-                    },
-                    {
-                    deliverable: "Media flighting table",
-                    },
-                    {
-                    deliverable: "Budget allocation per execution",
-                    },
-                    {
-                    deliverable: "Optimization recommendations",
-                    },
-                  ]}
-                  />
+                  <div className="custom-tab-pane fade" id="panel14" role="tabpanel">
+                    <Team
+                      imgSrc={mediaphoto}
+                      teamname ="Media Planning"
+                      description = "Develops a multi-million dollar purchasing plan by evaluating and researching the profitability of different media vehicles (i.e. TV, internet, social, etc.). This department creates the most effective strategy of placing ads through competitive benchmarking, consumer trend evaluations, and quantitative market analysis."
+                      deliverables ={mediaDelibs}
+                      />
                   </div>
-                </div>
-                <div className="collapse" id="collapseFive">
-                  <div class="card card-body">
-                  <Team
-                  imgSrc={productionphoto}
-                  teamname ="Production"
-                  description = "Develops a multi-million dollar purchasing plan by evaluating and researching the profitability of different media vehicles (i.e. TV, internet, social, etc.). This department creates the most effective strategy of placing ads through competitive benchmarking, consumer trend evaluations, and quantitative market analysis."
-                  deliverables ={[
-                    {
-                    deliverable: "The plansbook",
-                    },
-                    {
-                    deliverable: "Presentation deck",
-                    },
-                    {
-                    deliverable: "Recorded and edited video ads",
-                    },
-                    {
-                    deliverable: "Digital & Social execution mockups",
-                    },
-                    {
-                    deliverable: "Printed physical execution props",
-                    },
-                  ]}
-                  />
+                  <div className="custom-tab-pane fade" id="panel15" role="tabpanel">
+                    <Team
+                      imgSrc={productionphoto}
+                      teamname ="Production"
+                      description = "Develops a multi-million dollar purchasing plan by evaluating and researching the profitability of different media vehicles (i.e. TV, internet, social, etc.). This department creates the most effective strategy of placing ads through competitive benchmarking, consumer trend evaluations, and quantitative market analysis."
+                      deliverables ={productionDelibs}
+                      />
                   </div>
-                </div>
               </div>
             </div>
         );
