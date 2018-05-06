@@ -10,5 +10,11 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/pages/admin.js`,
+      },
+    },
   ],
 };

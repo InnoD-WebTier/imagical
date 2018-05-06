@@ -8,6 +8,7 @@
     "bootstrap": "^4.0.0",
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
+    "gatsby-plugin-netlify-cms": "^2.0.1",
     "gatsby-plugin-react-helmet": "^2.0.6",
     "gatsby-plugin-sass": "^1.0.25",
     "jquery": "^3.3.1",
