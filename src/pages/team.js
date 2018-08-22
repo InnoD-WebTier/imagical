@@ -92,6 +92,7 @@ export const pageQuery = graphql`
                 quality: 100,
                 cropFocus: CENTER
             ) {
+                base64
                 width
                 height
                 src
