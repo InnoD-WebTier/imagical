@@ -6,7 +6,7 @@
   "dependencies": {
     "airtable": "^0.5.3",
     "bootstrap": "^4.0.0",
-    "gatsby": "^1.9.223",
+    "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-react-helmet": "^2.0.6",
