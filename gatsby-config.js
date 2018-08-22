@@ -10,5 +10,27 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/md-store`,
+        name: 'pages'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: 'images'
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: []
+      }
+    },
   ],
 };
