@@ -11,7 +11,10 @@ class ContactPage extends React.Component{
 
   constructor(props) {
   super(props);
-  this.base = new Airtable({apiKey: process.env.GATSBY_API}).base('app3iO3a9F5k0AMdn');
+  this.base = new Airtable({
+    apiKey: process.env.GATSBY_API
+  }).base(process.env.BASE_KEY);
+
   this.state = {
     submitted: false,
   }
