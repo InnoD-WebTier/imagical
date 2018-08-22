@@ -34,7 +34,7 @@ export default class About extends React.Component {
                       imagiCal, established in 1980, is the Berkeley chapter of
                       the American Advertising Federation Our organization
                       functions as a fully student-run advertising agency and
-                      creative consultancy comprised of around 30 undergraduates with a diverse array interests, academic fields, and backgrounds. We are researchers, athletes, businesspeople, artists, and more. Many of our alumni graduate to top firms in consulting, banking, and tech industries, as well as to academia, science and advertising. Learn more about our current members here [link to meet the team]
+                      creative consultancy comprised of 25-30 undergraduates with a diverse array of interests, academic fields, and backgrounds. We are researchers, athletes, businesspeople, artists, and more. Many of our alumni graduate to top firms in consulting, banking, and tech industries, as well as to academia, science and advertising. Learn more about our current members here [link to meet the team]
                       </p>
                   </div>
                   </div>
