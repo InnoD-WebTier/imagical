@@ -9,7 +9,7 @@ board:
   - image: /images/IMG_6803.jpg
     name: Emmy Cheng
     role: Co-Internal Vice President
-  - image: /images/IMG_6803.jpg
+  - image: /images/IMG_6443.jpg
     name: Jessica Tzeng
     role: Co-Internal Vice President
 directors:
@@ -26,10 +26,10 @@ directors:
   - image: /images/IMG_6627.jpg
     name: Kenneth Ng
     role: PR Director & Project Manager
-  - image: /images/IMG_6627.jpg
+  - image: /images/IMG_6311.jpg
     name: Ruby Chen
     role: Production Director
-  - image: /images/IMG_6627.jpg
+  - image: /images/franceswu.jpg
     name: Frances Wu
     role: Media Planning Director & Project Manager
   - image: /images/received_226406928033815.jpeg
