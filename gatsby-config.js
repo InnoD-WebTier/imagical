@@ -4,6 +4,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -13,19 +15,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/md-store`,
+        path: `${__dirname}/src/md-store/`,
         name: 'pages'
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/images`,
+        path: `${__dirname}/static/images/`,
         name: 'images'
       }
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
