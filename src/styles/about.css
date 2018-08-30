@@ -114,7 +114,7 @@ a.button.active{
   line-height: 1.7em;
 }
 
-.container--intro, p {
+.container--intro {
   padding-left: 15px;
 }
 
