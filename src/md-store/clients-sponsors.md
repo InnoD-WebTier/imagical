@@ -15,6 +15,7 @@ projects:
       aged 16-25 towards WeChat’s messaging app. The team should draw insights
       from the data to inform necessary product feature improvements, targeted
       brand messaging, and a slogan to rebrand WeChat as a global brand.
+    image: /images/clients/tencent.png
   - name: MissionU
     year: 2017
     recommendations:
@@ -29,6 +30,7 @@ projects:
       Understand how MissionU can better engage with students upon
       graduation, and provide strategic recommendations on how to continue
       and maintain these alumni relationships in the short and long term.
+    image: /images/clients/missionu-1.png
   - name: Airbnb
     year: 2016
     recommendations:
@@ -41,6 +43,7 @@ projects:
       Understand the severity of pain points in Airbnb’s current full
       upfront payment process and determine the strategic focus of product
       solutions to ease these pain points.
+    image: /images/clients/airbnb.png
 nsac:
   - name: Snapple
     year: 2016
@@ -51,12 +54,14 @@ nsac:
       Create a dual-strategy, integrated marketing campaign to grow and shape
       Snapple’s trademark image into a brand that is relatable to both Heartland
       and non-Heartland consumers.
+    image: /images/clients/snapple.png
   - name: Pizza Hut
     year: 2015
     awards:
       - NSAC District 14 Regional Competition - 2nd Place
     ask: >-
       Increase the share of digital pizza orders to 75% by the end of 2015
+    image: /images/clients/pizzahut.png
   - name: Mary Kay
     year: 2014
     awards:
@@ -65,4 +70,11 @@ nsac:
     ask: >-
       Increase awareness, consideration and positive perception of Mary
       Kay for female millennials within the United States.
+    image: /images/clients/marykay.png
+
+sponsors:
+  - name: Adobe
+    image: /images/clients/adobe.png
+  - name: Accenture
+    image: /images/clients/accenture.png
 ---
